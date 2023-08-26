@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arunav - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: rgb(255, 255, 255);
+        font-family: "Poppins", sans-serif;
+      }
+      .red {
+        color: red;
+      }
+      .yellow {
+        color: yellow;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 61);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(153, 153, 226);
+        font-size: 1.02rem;
+      }
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 30px 74px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 100px 0;
+      }
+      .firstSection > div {
+        width: 37%;
+      }
+      .leftSection {
+        font-size: 3rem;
+      }
+      .leftSection .btn {
+        padding: 12px;
+        background: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      .leftSection .buttons {
+        padding: 50px 0;
+      }
+      .rightSection img {
+        width: 70%;
+        margin: 20px 0;
+      }
+      .purple {
+        color: rgb(170, 107, 228);
+      }
+      .text-gray {
+        color: gray;
+      }
+      #element {
+        color: rgb(170, 107, 228);
+      }
+      .secondSection {
+        max-width: 85vw;
+        margin: auto;
+        height: 290vh;
+      }
+      .secondSection hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 30px 3px;
+      }
+      .secondSection h1 {
+        font-size: 1.8rem;
+      }
+      .secondSection .box {
+        background: white;
+        width: 80vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondSection h1 p {
+        color: gray;
+        font-size: 1rem;
+        font-style: normal;
+      }
+      .secondSection h4 p {
+        color: gray;
+        font-size: 1rem;
+        font-style: normal;
+      }
+      .secondSection h4 li {
+        color: gray;
+        font-size: 1rem;
+        font-style: normal;
+        list-style: none;
+      }
+      .secondSection h4 li::marker {
+  content: "▶";
+}
+      .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 100px;
+      }
+      .image-top {
+        width: 55px;
+        position: relative;
+        top: -56px;
+        left: -22px;
+      }
+      .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 10px;
+      }
+      footer {
+        background-color: #0e0e1a;
+      }
+      .footer {
+        display: flex;
+        padding: 33px 110px;
+        justify-content: space-evenly;
+      }
+      .footer ul {
+        list-style: none;
+      }
+      .footer > div {
+        width: 223px;
+      }
+      footer .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+      }
+      .footer-second ul li a img {
+        size: 4rem;
+      }
+      .footer-second ul img {
+        width: 16%;
+        margin: 4px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left"><h1 id="home"></h1>Arunav Majinder Baruah</div>
+        <div class="right">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Arunav</span>
+          <div>and I am a passionate</div>
+
+          <span id="element"></span>
+
+          <div class="buttons">
+            <a href="https://drive.google.com/file/d/1Ngau-Sx3_y8mZvvvJU-5LRL_7KDI2bzH/view?usp=sharing"> <button class="btn">Download Resume</button></a>
+            <a href="https://github.com/arunavbaruah"> <button class="btn">Visit GitHub</button></a>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img style="border-radius: 130%;" src="New-file (6).gif" alt="" />
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="secondSection">
+        <h1 id="about">
+          About Me <a href="#home"><h4 style="color: white; font-size: small;"> Go to top</h4></a><br>
+          <p>
+            👋 Hello there! I'm a 3rd-year B.Tech CSE student with a love for crafting digital wonders. My journey is a fusion of curiosity and creation, where I thrive on transforming ideas into interactive realities.<br><br>
+
+            🚀 My heart races for both ends of the tech spectrum. Whether it's the artistic dance of Front-end Development that tickles my creativity or the intricate logic of Back-end Development that fuels my problem-solving, I'm all in.<br><br>
+            
+            💡 Armed with a toolset that includes C/C++, basic Python scripting, HTML, CSS, JavaScript, ReactJS, NodeJS, SQL, and MongoDB, I've already brought various projects to life. From dynamic web applications that engage users to the backbone of server logic that keeps everything running smoothly – I've got it all covered.<br><br>
+            
+            📱 Mobile apps are my canvas too, as I delve into the world of App Development. Flutter is my latest fascination, but I'm no stranger to the art, having already mastered Android app creation.<br><br>
+            
+            🎮 Oh, did I mention I'm also a creator of virtual realms? With AR/VR, I've given life to a captivating 2D game on Windows, adding an extra layer of immersion to the gaming experience.<br><br>
+            
+            🌐 My project showcase includes:<br><br>
+            - Interactive web applications that breathe life into ideas.<br>
+            - Android app that seamlessly merges utility and user-friendliness.<br>
+            - Enthralling 2D game with AR/VR elements, blurring the lines between reality and imagination.<br><br>
+            
+            🌱 As I learn, adapt, and evolve, my aim remains constant – to be at the forefront of innovation. If you're a recruiter seeking a dynamic, passionate, and skilled developer, let's connect! Together, we can shape the digital landscape in extraordinary ways.
+          </p>
+          <br />
+          <h4>
+            <h3>Who am <span class="red">I</span>?</h3><br>
+            <b><span class="yellow"> In one word :-</span></b>
+            <p>I'm a Technophile</p>
+            <br />
+          </h4>
+          <h4>
+            <span class="yellow">In detail :-</span>
+            <li>Programmer</li>
+            <li>Loves Coding</li>
+            <li>Loves Developing</li>
+            <li>Tech Enthusiast</li>
+            <li>Web Developer</li>
+            <li>App Developer</li>
+            <li>Game Developer</li>
+            <li>AR/VR</li>
+            <br />
+          </h4>
+        </h1>
+        <hr />
+        <span class="text-gray">What I have done so far</span>
+        <h1 id="projects">My Projects<a href="#home"><h4 style="color: white; font-size: small;"> Go to top</h4></a><br></h1>
+
+        <div class="box">
+          <div class="vertical">
+            <img class="image-top" src="cc.png" alt="" />
+            
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="oo.png" alt="" />
+            
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="dd.png" alt="" />
+            
+          </div>
+          <div class="vertical">
+            <img class="image-top" src="ii.png" alt="" />
+            
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="nn.png" alt="" />
+            
+          </div>
+
+          <div class="vertical">
+            <img class="image-top" src="gg.png" alt="" />
+            
+          </div>
+        </div>
+
+        <div class="slider-container">
+        <section class="swiper mySwiper">
+          <div class="swiper-wrapper">
+  
+              <div class="card swiper-slide">
+  
+                  <div class="card_image">
+                      <img src="1.png" alt="">
+                  </div>
+                  <div class="card_content">
+                      <span class="card_title">Web Development</span>
+                      <span class="card_name">Spotify Clone | HTML, CSS, Java Script
+                      </span>
+                      <p class="card_text">Developed a music streaming web application mimicking Spotify's user
+                        interface and functionalities.
+                        </p>
+                      <button class="card_btn">View More</button>
+                  </div>
+              </div>
+  
+              <div class="card swiper-slide">
+  
+                  <div class="card_image">
+                      <img src="2.png" alt="">
+                  </div>
+                  <div class="card_content">
+                      <span class="card_title">Web Development</span>
+                      <span class="card_name">Weather API | HTML, CSS, Java Script
+                      </span>
+                      <p class="card_text">Created a web app that fetches real-time weather data using a
+                        third-party API and displays it to the user.
+                        </p>
+                      <button class="card_btn">View More</button>
+                  </div>
+              </div>
+  
+              <div class="card swiper-slide">
+  
+                  <div class="card_image">
+                      <img src="3.png" alt="">
+                  </div>
+                  <div class="card_content">
+                      <span class="card_title">Web Development</span>
+                      <span class="card_name">Portfolio Website | HTML, CSS, Java Script</span>
+                      <p class="card_text">Designed and developed a personal portfolio website showcasing skills,
+                        projects, and achievements.</p>
+                      <button class="card_btn">View More</button>
+                  </div>
+              </div>
+  
+              <div class="card swiper-slide">
+  
+                  <div class="card_image">
+                      <img src="4.png" alt="">
+                  </div>
+                  <div class="card_content">
+                      <span class="card_title">App Development</span>
+                      <span class="card_name">Flappy Bird AR 2D Game using Unity Hub
+                      </span>
+                      <p class="card_text">Developed an augmented reality version of the popular Flappy Bird
+                        game using Unity's AR capabilities.
+                        </p>
+                      <button class="card_btn">View More</button>
+                  </div>
+              </div>
+  
+              <div class="card swiper-slide">
+  
+                  <div class="card_image">
+                      <img src="5.png" alt="">
+                  </div>
+                  <div class="card_content">
+                      <span class="card_title">Python Project</span>
+                      <span class="card_name">To-Do List in Python</span>
+                      <p class="card_text">Implemented a command-line to-do list application using Python for
+                        task management.</p>
+                      <button class="card_btn">View More</button>
+                  </div>
+              </div>
+  
+              <div class="card swiper-slide">
+  
+                  <div class="card_image">
+                      <img src="6.png" alt="">
+                  </div>
+                  <div class="card_content">
+                      <span class="card_title">C Project</span>
+                      <span class="card_name">Tic Tac Toe Game in C
+                      </span>
+                      <p class="card_text">Designed a console-based tic-tac-toe game in the C programming language.</p>
+                      <button class="card_btn">View More</button>
+                  </div>
+              </div>
+  
+              <div class="card swiper-slide">
+  
+                  <div class="card_image">
+                      <img src="7.jpg" alt="">
+                  </div>
+                  <div class="card_content">
+                      <span class="card_title">App Development</span>
+                      <span class="card_name">2D Rotating Earth Mobile App using Unity Hub
+                      </span>
+                      <p class="card_text">Created a mobile app featuring a rotating Earth animation using Unity's
+                        2D graphics.</p>
+                      <button class="card_btn">View More</button>
+                  </div>
+              </div>
+  
+          </div>
+          <div class="swiper-pagination"></div>
+      </section>
+    </div>
+
+      </section>
+    </main>
+
+    <footer id="contact">
+      <div class="footer">
+        <a href="#home"><h4 style="color: white; font-size: small;"> Go to top</h4></a><br>
+        <div class="footer-first">Contact Me :</div>
+        <div class="footer-second">
+          <ul>
+            <li><a href="https://www.linkedin.com/in/arunav-majinder-baruah-92492b244/"><img src="li.png" alt=""></a></li>
+            <li><a href="https://github.com/arunavbaruah"><img src="GitHub.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/arunav_m_baruah_019/"><img src="ig.png" alt=""></a></li>
+            <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"><img src="gmail.png" alt=""></a></li>
+          </ul>
+        </div>
+        <div class="footer-third"></div>
+        <div class="footer-fourth"></div>
+      </div>
+      <div class="footer-rights">
+        Copyright &#169; arunavsportfolio.com | All rights reserved
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Programmer",
+          "Web Designer",
+          "Tech Enthusiast",
+        ],
+        typeSpeed: 80,
+      });
+
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 1000, // 2000ms = 2s;
+        autoplayHoverPause: true,
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 300,
+            modifier: 1,
+            slideShadows: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+    });
+
+    </script>
+    
+    </script>
+
+  </body>
+</html>
