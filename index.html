@@ -20,7 +20,7 @@
         padding: 0;
       }
       body {
-        background-color: rgb(0, 0, 33);
+        background-color: rgb(0, 0, 0);
         color: rgb(255, 255, 255);
         font-family: "Poppins", sans-serif;
       }
@@ -35,7 +35,7 @@
         justify-content: space-around;
         align-items: center;
         height: 80px;
-        background-color: rgb(18, 18, 61);
+        background-color: rgb(170, 107, 228);
       }
       nav ul {
         display: flex;
@@ -50,7 +50,7 @@
         color: white;
       }
       nav ul li a:hover {
-        color: rgb(153, 153, 226);
+        color: rgb(231, 231, 241);
         font-size: 1.02rem;
       }
       main hr {
@@ -76,7 +76,7 @@
       }
       .leftSection .btn {
         padding: 12px;
-        background: #1e2167;
+        background: rgb(170, 107, 228);
         color: white;
         border: 2px solid white;
         border-radius: 6px;
@@ -87,7 +87,7 @@
         padding: 50px 0;
       }
       .rightSection img {
-        width: 70%;
+        width: 100%;
         margin: 20px 0;
       }
       .purple {
@@ -139,19 +139,19 @@
       .secondSection h4 li::marker {
   content: "▶";
 }
-      .secondSection .vertical {
+      /* .secondSection .vertical {
         height: 93px;
         width: 1px;
         background-color: white;
         margin: 0 100px;
-      }
+      } */
       .image-top {
         width: 55px;
         position: relative;
         top: -56px;
         left: -22px;
       }
-      .vertical-title {
+      /* .vertical-title {
         position: relative;
         top: 75px;
         width: 150px;
@@ -162,9 +162,9 @@
         color: gray;
         width: 150px;
         font-size: 10px;
-      }
+      } */
       footer {
-        background-color: #0e0e1a;
+        background-color: rgb(170, 107, 228);
       }
       .footer {
         display: flex;
@@ -179,7 +179,7 @@
       }
       footer .footer-rights {
         text-align: center;
-        color: gray;
+        color: rgb(255, 255, 255);
         padding: 12px 0;
       }
       .footer-second ul li a img {
@@ -214,12 +214,12 @@
           <span id="element"></span>
 
           <div class="buttons">
-            <a href="https://drive.google.com/file/d/1Ngau-Sx3_y8mZvvvJU-5LRL_7KDI2bzH/view?usp=sharing"> <button class="btn">Download Resume</button></a>
+            <a href="https://drive.google.com/file/d/1Ngau-Sx3_y8mZvvvJU-5LRL_7KDI2bzH/view?usp=sharing"> <button class="btn">View Resume</button></a>
             <a href="https://github.com/arunavbaruah"> <button class="btn">Visit GitHub</button></a>
           </div>
         </div>
         <div class="rightSection">
-          <img style="border-radius: 130%;" src="New-file (6).gif" alt="" />
+          <img style="border-radius: 0%;" src="New-file (6).gif" alt="" />
         </div>
       </section>
 
@@ -228,7 +228,7 @@
       <section class="secondSection">
         <h1 id="about">
           About Me <a href="#home"><h4 style="color: white; font-size: small;"> Go to top</h4></a><br>
-          <p>
+          <p style="font-style: normal; font-weight: lighter; color: white;">
             👋 Hello there! I'm a 3rd-year B.Tech CSE student with a love for crafting digital wonders. My journey is a fusion of curiosity and creation, where I thrive on transforming ideas into interactive realities.<br><br>
 
             🚀 My heart races for both ends of the tech spectrum. Whether it's the artistic dance of Front-end Development that tickles my creativity or the intricate logic of Back-end Development that fuels my problem-solving, I'm all in.<br><br>
@@ -270,7 +270,7 @@
         <span class="text-gray">What I have done so far</span>
         <h1 id="projects">My Projects<a href="#home"><h4 style="color: white; font-size: small;"> Go to top</h4></a><br></h1>
 
-        <div class="box">
+        <!-- <div class="box">
           <div class="vertical">
             <img class="image-top" src="cc.png" alt="" />
             
@@ -297,7 +297,7 @@
             <img class="image-top" src="gg.png" alt="" />
             
           </div>
-        </div>
+        </div> -->
 
         <div class="slider-container">
         <section class="swiper mySwiper">
@@ -345,7 +345,7 @@
                       <span class="card_name">Portfolio Website | HTML, CSS, Java Script</span>
                       <p class="card_text">Designed and developed a personal portfolio website showcasing skills,
                         projects, and achievements.</p>
-                      <button class="card_btn">View More</button>
+                      <a href="https://arunavbaruah.github.io/Portfolio/"><button class="card_btn">View More</button></a>
                   </div>
               </div>
   
