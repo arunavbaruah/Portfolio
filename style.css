@@ -23,7 +23,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh; /* Adjust the height as needed */
-    width: auto;
+    width: 96%;
 }
 
 .swiper-wrapper {
@@ -36,9 +36,9 @@ body{
 .card {
     width: 20em;
     height: 90%;
-    background-color: #ffad20;
+    background-color: rgb(170, 107, 228);
     border-radius: 2em;
-    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    box-shadow: 0 0 2em rgba(255, 199, 102, 0.2);
     padding: 1em 1em;
     display: flex;
     align-items: center;
@@ -54,7 +54,7 @@ body{
     width: 10em;
     height: 10em;
     border-radius: 50%;
-    border: 5px solid #9176ff;
+    border: 5px solid #5d43c5;
     padding: 3px;
     margin-bottom: 2em;
 }
@@ -90,7 +90,7 @@ body{
 }
 
 .card_btn {
-    background-color: #9176ff;
+    background-color: #5d43c5;
     color: #fff;
     font-size: 1rem;
     text-transform: uppercase;
