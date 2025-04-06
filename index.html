@@ -167,6 +167,8 @@
         .hero-text {
             flex: 1;
             padding-right: 2rem;
+            margin-bottom: 0;
+            padding-left: 60px;
         }
 
         .hero-text h4 {
@@ -266,12 +268,15 @@
 
         .social-icons {
             position: absolute;
-            left: 0;
-            bottom: 2rem;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            z-index: 2;
+    left: 0;
+    bottom: auto; /* Remove bottom positioning */
+    top: 50%; /* Position vertically centered */
+    transform: translateY(-50%); /* Center vertically */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 2;
+    margin-left: 10px; /* Add small margin from left edge */
         }
 
         .social-icons a {
@@ -790,6 +795,13 @@
         }
 
         /* Responsive Styles */
+
+        @media (max-width: 1400px) {
+    .hero-text {
+        padding-left: 50px; /* Slightly less padding */
+    }
+}
+
         @media (max-width: 1200px) {
             .hero-text h1 {
                 font-size: 3rem;
@@ -815,6 +827,7 @@
                 margin-bottom: 0;
                 flex: 1 1 100%; /* Take full width when image is hidden */
                 padding-right: 0;
+                padding-left: 0;
             }
 
             .social-icons {
@@ -822,6 +835,7 @@
                 flex-direction: row;
                 justify-content: center;
                 margin-top: 2rem;
+                transform: none;
             }
 
             .about-content {
